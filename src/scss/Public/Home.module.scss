@@ -1,0 +1,296 @@
+.MainWrapper {
+    .SlideImage {
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    .flashIcon {
+        font-size: 35px;
+        color: #841c1d;
+        position: relative;
+        margin: -20px auto 0;
+        display: block;
+        left: -20px;
+    }
+    .WelcomeMessage {
+        position: absolute;
+        top: 2.5%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        height: auto;
+        box-shadow: inset;
+        padding: 0 2px;
+
+        @media screen and (min-width: 1150px) {
+            position: absolute;
+            top: 4%;
+            margin: 0 5%;
+            background-color: #ffffff;
+            height: auto;
+            box-shadow: inset;
+            padding: 0 10px;
+        }
+        @media screen and (max-width: 992.01px) {
+            background-color: #ffffff;
+            position: relative;
+            height: auto;
+            top: 0;
+            text-align: center;
+            margin: 0;
+        }
+        .lgIcon {
+            font-size: calc(40px + 6 * ((900vw - 320px) / 9080));
+            color: #87aac0;
+            transform: rotatex(180deg);
+            position: relative;
+            top: -10px;
+            margin-top: -20px;
+            left: -20px;
+            display: block;
+            @media screen and (max-width: 992.01px) {
+                display: none;
+            }
+        }
+        h4 {
+            height: 40px;
+            line-height: 40px;
+            color: #555555;
+            font-weight: 400;
+        }
+        p {
+            color: #999999;
+            font-weight: 300;
+            width: 95%;
+            line-height: 30px;
+            margin: 0 20px 0 0;
+            font-size: 15px;
+        }
+        a {
+            color: #686868;
+            font-weight: 400;
+            line-height: 40px;
+            position: relative;
+            margin: 0 50px 0 0;
+            font-size: 13px;
+            padding: 0 2px;
+            border-bottom: 2px solid #287494;
+            transition: all 0.2s linear;
+
+            @media screen and (max-width: 992.01px) {
+                margin: 0;
+            }
+
+            &.Active,
+            &:hover {
+                text-decoration: none;
+                color: #287494;
+                background-color: #fff;
+                border-bottom: 7px solid #287494;
+            }
+        }
+    }
+    .StartTest {
+        text-align: center;
+        margin-top: 20px !important;
+        color: #999999;
+        img {
+            width: 130px;
+            margin: 40px 0 0;
+        }
+        h6 {
+            margin: 0 0 40px 0;
+        }
+        button {
+            background-color: #287494;
+            padding: 10px 40px;
+            font-weight: 300;
+            font-size: 17px;
+        }
+        p {
+            font-size: 20px;
+            margin: 50px 0 20px;
+        }
+        .LeftSideIcon {
+            float: left;
+
+            @media screen and (max-width: 992.01px) {
+                float: none;
+            }
+        }
+        .RightSideIcon {
+            float: right;
+
+            @media screen and (max-width: 992.01px) {
+                float: none;
+            }
+        }
+    }
+    .AboutTest {
+        text-align: center;
+        margin: 20px 0 0 !important;
+        color: #999999;
+        background-color: #f1f9fb;
+        padding: 50px 0;
+        span {
+            color: #287494;
+            font-weight: 500;
+            font-size: 19px;
+        }
+        p {
+            margin: 30px auto;
+            width: 60%;
+            line-height: 25px;
+        }
+        a {
+            color: #686868;
+            font-weight: 400;
+            line-height: 30px;
+            margin: 0px auto;
+            font-size: 12px;
+            border-bottom: 2px solid #287494;
+            padding: 0 2px;
+            transition: all 0.2s linear;
+
+            &.Active,
+            &:hover {
+                text-decoration: none;
+                color: #287494;
+                border-bottom: 7px solid #287494;
+            }
+        }
+        a:hover {
+            border-bottom: 10px solid #287494;
+            text-decoration: none;
+        }
+    }
+    .Instagram {
+        .firstBackG {
+            background-color: #f1f1ef;
+            height: 160px;
+            text-align: center;
+        }
+        h3 {
+            color: #287494;
+            font-weight: 700;
+            margin: 20px auto 0;
+            height: 50px;
+            @media screen and (max-width: 992.01px) {
+                font-size: 25px;
+            }
+        }
+        p {
+            height: 50px;
+            line-height: 50px;
+            font-weight: 500;
+            color: #999999;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+        .arrowIcon {
+            position: relative;
+            z-index: 200;
+            color: #841c1d;
+            font-size: 25px;
+            margin: 0 0 10px;
+        }
+        .teddyImg {
+            width: 250px;
+            z-index: 300 !important;
+            position: relative;
+            top: 0px;
+            @media screen and (max-width: 992.01px) {
+                width: 150px;
+                top: 0px;
+            }
+        }
+        .secondBackG {
+            background-image: linear-gradient(to right, #cd0051, #610097);
+            height: 117px;
+            width: 100%;
+            position: relative;
+            bottom: 0px !important;
+            @media screen and (max-width: 992.01px) {
+                width: 100px !important;
+            }
+            p {
+                text-align: center;
+                font-size: 30px;
+                margin: 30px 0;
+                span {
+                    color: #fff !important;
+                    line-height: 10px;
+                }
+                svg {
+                    margin: 0 5px -5px !important;
+                }
+                .instagramIcon {
+                    font-size: 40px;
+                    color: #fff;
+                    display: inline !important;
+                }
+                a:hover {
+                    text-decoration: none !important;
+                    font-size: 31px;
+                }
+                @media screen and (max-width: 992.01px) {
+                    font-size: 20px;
+                    .instagramIcon {
+                        margin: 0 2px -2px !important;
+                        font-size: 25px;
+                    }
+                    a:hover {
+                        text-decoration: none !important;
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+    .Articles {
+        span{
+            color: #287494;
+            font-size: 24px;
+            font-weight: 500;
+            margin: 70px auto 50px;
+        }
+        .Article {
+            margin: 0 0 40px;
+          
+            img {
+                width: 100%;
+                height: 230px;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                transition: 0.5s;
+            }
+            h5 {
+                color: #777777;
+                font-size: 16.5px;
+                margin: 25px 0 15px;
+            }
+            p {
+                color: #999999;
+                font-size: 12px;
+                line-height: 25px;
+                height: 50px;
+                overflow-y: hidden;
+            }
+            .arrowIcon{
+                width: 33px;
+                height: 33px;
+                color: #a82b2b;
+                font-size: 22px;
+                border: 2px solid #a82b2b;
+                border-radius: 33px;
+                padding: 5px;
+            }
+            &:hover{
+                img{
+                    -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+                    filter: grayscale(0%) !important;
+                }
+            }
+        }
+    }
+}
